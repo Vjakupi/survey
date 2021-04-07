@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <h1 id="title" class="title">/r/Chessclub Tournament Application</h1>
+    <p id="description" class="title">Submit your application for entry into /r/chessclub's first official tournament!
+    </p>
+
+    <form id="survey-form" action="#" method="get" class="fcc-survey">
+        <label id="name-label" for="name">Enter your Lichess username:</label>
+
+        <div class="fcc-survey">
+
+            <input type="text" id="name" name="name" placeholder="Severus Snape" required>
+        </div>
+
+        <label for="email" id="email-label">Enter your email:</label>
+
+        <div class="fcc-survey">
+
+            <input type="email" id="email" name="email" placeholder="Pottersux@hogwarts.edu" required>
+        </div>
+        <label for="number" id="number-label">Enter your Lichess Rapid Rating:</label>
+
+        <div class="fcc-survey">
+
+            <input type="number" id="number" name="rating" placeholder="1300" min="500" max="2500">
+        </div>
+        <div class="fcc-survey">
+            <p>Please select what best describes your current role?</p>
+            <select id="dropdowned" name="role" class="form-control">
+                <option disabled="" selected="" value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+
+        <div class="fcc-survey">
+            <p>How likely are you to reccomend X to Y?</p>
+
+            <input type="radio" id="nee" name="screeches" value="nee" checked>
+            <label for="nee">Nee</label>
+        </div>
+
+        <div class="fcc-survey">
+            <input type="radio" id="sree" name="screeches" value="sree">
+            <label for="sree">Sree</label>
+        </div>
+
+        <div class="fcc-survey">
+            <input type="radio" id="deedle" name="screeches" value="deedle">
+            <label for="deedle">Deedle</label>
+        </div>
+        <div class="fcc-survey">
+            <p>Please select what best describes your current role?</p>
+            <select id="dropdown" name="role" class="fcc-survey" required>
+                <option disabled="" selected="" value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <p>How can we improve the Chess club community?<span class="improvement"> (Check all that apply)</span></p>
+        <div class="fcc-survey">
+            <input type="checkbox" id="lessons" value="lessons">
+            <label for="lessons">More 2000+ rated players offering lessons</label>
+
+        </div>
+        <div class="fcc-survey">
+            <input type="checkbox" id="match" value="match">
+            <label for="match">Matchmaking</label>
+
+        </div>
+        <div class="fcc-survey">
+            <input type="checkbox" id="synergy" value="synergy">
+            <label for="synergy">More synergy between Discord and Subreddit</label>
+
+        </div>
+        <div class="fcc-survey">
+            <input type="checkbox" id="time" value="time">
+            <label for="time">More clarity on which players are in which timezones</label>
+
+        </div>
+        <div class="fcc-survey">
+            <input type="checkbox" id="mod" value="mod">
+            <label for="mod">Would like to see more active moderation.</label>
+
+        </div>
+
+
+        <p>Any comments or suggestions?</p>
+        <textarea name="comments" id="comments" cols="40" rows="10"></textarea>
+        <div class="fcc-survey">
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

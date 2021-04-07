@@ -1,0 +1,25 @@
+body {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+form {
+    background-color: #a8dadc;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    text-align: center;
+}
+
+.fcc-survey {
+    text-align: center;
+}
+
+.improvement {
+    font-size: 14px;
+}
+
